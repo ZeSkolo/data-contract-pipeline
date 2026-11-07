@@ -1,0 +1,22 @@
+{
+  "csv": "id,amount,status\nA1,120,paid\nA2,-5,paid\nA1,30,pending\nA3,45,pending\n",
+  "contract": {
+    "id": {
+      "type": "str",
+      "required": true,
+      "unique": true
+    },
+    "amount": {
+      "type": "float",
+      "required": true,
+      "min": 0
+    },
+    "status": {
+      "type": "str",
+      "allowed": [
+        "paid",
+        "pending"
+      ]
+    }
+  }
+}
